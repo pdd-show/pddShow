@@ -4,9 +4,14 @@
 
     <!--描述这个POM文件是遵从maven哪个版本的项目描述符-->
     <modelVersion>4.0.0</modelVersion>
+    <!-- 组织名称：暂时使用 组织名称+项目名称 作为组织名称 -->
+    <!-- 组织名称：实际名称 按照访问路径规范设置，通常以功能作为名称：eg: junit spring -->
     <groupId>com.pdd</groupId>
+    <!-- 项目名称 -->
     <artifactId>springboot</artifactId>
+    <!-- 当前项目版本号：同一个项目开发过程中可以发布多个版本，此处标示0.0.1版 -->
     <version>0.0.1-SNAPSHOT</version>
+    <!-- 名称：可省略 -->
     <name>springboot</name>
     <description>Spring Boot pdd</description>
 
@@ -26,10 +31,16 @@
     </properties>
 
     <!--dependencies标签中，配置dependency 和 exclusions 2部分-->
+    <!-- 依赖关系 -->
     <dependencies>
+        <!-- 依赖设置 -->
         <dependency>
+            <!-- 依赖组织名称 -->
             <groupId>org.springframework.boot</groupId>
+            <!-- 依赖项目名称 -->
             <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 依赖版本名称 -->
+            <!-- 依赖范围：test包下依赖该设置 scope -->
         </dependency>
 
         <dependency>
@@ -82,6 +93,13 @@
                 <!--配置了true后在修改java文件后也就支持了热启动，不过这种方式是属于项目重启（速度比较快的项目重启），会清空session中的值，也就是如果有用户登陆的话，项目重启后需要重新登陆。-->
                 <configuration>
                     <fork>true</fork>
+                    <!--这部分可有可无,加上的话则直接生成可运行jar包-->
+                    <!--<archive>-->
+                    <!--<manifest>-->
+                    <!--<mainClass>${exec.mainClass}</mainClass>-->
+                    <!--</manifest>-->
+                    <!--</archive>-->
+
                 </configuration>
             </plugin>
         </plugins>
