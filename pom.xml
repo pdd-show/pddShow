@@ -29,6 +29,7 @@
         <freemarker.version>2.3.28</freemarker.version>
         <fastjson.version>1.2.47</fastjson.version>
         <aspectj.version>1.6.11</aspectj.version>
+        <common.version>1.9.3</common.version>
     </properties>
 
     <!--dependencies标签中，配置dependency 和 exclusions 2部分-->
@@ -106,6 +107,13 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${common.version}</version>
+        </dependency>
+
     </dependencies>
 
     <!--build标签中，配置plugins 和 resources 2部分-->
