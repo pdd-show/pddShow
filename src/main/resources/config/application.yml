@@ -1,3 +1,28 @@
+server:
+  port: 8080
 spring:
   application:
     name: security
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/security?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true
+# mybatis -plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/**/*.xml
+  global-config:
+    # 逻辑删除配置
+    db-config:
+      # 删除前
+      logic-not-delete-value: 1
+      # 删除后
+      logic-delete-value: 0
+# 打印日志
+logging:
+  level:
+    com.lumlord.mapper: debug

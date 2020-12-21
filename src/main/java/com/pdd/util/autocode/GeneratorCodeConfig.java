@@ -64,7 +64,7 @@ public class GeneratorCodeConfig {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         // 导出地址
-        String projectPath = "D:\\AutoCode";
+        String projectPath = "F:\\AutoCode";
 //        String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("pdd");
@@ -88,7 +88,7 @@ public class GeneratorCodeConfig {
 //        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 //        dsc.setUsername("ywdev_rw");
 //        dsc.setPassword("7hz3pUFaD3asd");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/new_security_server?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/security?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
@@ -98,7 +98,7 @@ public class GeneratorCodeConfig {
         PackageConfig pc = new PackageConfig();
         String scanner = scanner("模块名");
 //        pc.setModuleName(scanner);
-        pc.setParent("com.lumlord");
+        pc.setParent("com.pdd");
         pc.setEntity("model.auto." + scanner);
         pc.setMapper("mapper.auto." + scanner);
         pc.setService("service." + scanner);
