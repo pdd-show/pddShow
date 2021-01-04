@@ -32,6 +32,7 @@
         <common.version>1.9.4</common.version>
         <jsoup.version>1.10.2</jsoup.version>
         <httpclient.version>4.5.8</httpclient.version>
+        <redis.version>2.1.2.RELEASE</redis.version>
     </properties>
 
     <!--dependencies标签中，配置dependency 和 exclusions 2部分-->
@@ -45,6 +46,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <!-- 依赖版本名称 -->
             <!-- 依赖范围：test包下依赖该设置 scope -->
+        </dependency>
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${redis.version}</version>
         </dependency>
 
         <dependency>
