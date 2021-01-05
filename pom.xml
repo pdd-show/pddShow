@@ -33,6 +33,7 @@
         <jsoup.version>1.10.2</jsoup.version>
         <httpclient.version>4.5.8</httpclient.version>
         <redis.version>2.1.2.RELEASE</redis.version>
+        <easypoi.version>4.1.0</easypoi.version>
     </properties>
 
     <!--dependencies标签中，配置dependency 和 exclusions 2部分-->
@@ -47,6 +48,25 @@
             <!-- 依赖版本名称 -->
             <!-- 依赖范围：test包下依赖该设置 scope -->
         </dependency>
+
+        <!--easy poi-->
+        <dependency>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-base</artifactId>
+            <version>${easypoi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-web</artifactId>
+            <version>${easypoi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-annotation</artifactId>
+            <version>${easypoi.version}</version>
+        </dependency>
+
+
 
         <!--redis-->
         <dependency>
