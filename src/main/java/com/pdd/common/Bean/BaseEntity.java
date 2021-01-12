@@ -29,8 +29,10 @@ package com.pdd.common.Bean;
  * ////////////////////////////////////////////////////////////////////
  */
 
-import java.util.Date;
+import lombok.Data;
 
+import java.util.Date;
+@Data
 public class BaseEntity {
     private Date addTime;
     private Date updateTime;
@@ -39,54 +41,5 @@ public class BaseEntity {
     private Integer projectId;
     private Integer state;
 
-    public BaseEntity() {
-    }
 
-    public Date getAddTime() {
-        return this.addTime;
-    }
-
-    public void setAddTime(Date addTime) {
-        this.addTime = addTime;
-    }
-
-    public Date getUpdateTime() {
-        return this.updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Integer getAddUser() {
-        return this.addUser;
-    }
-
-    public void setAddUser(Integer addUser) {
-        this.addUser = addUser;
-    }
-
-    public Integer getUpdateUser() {
-        return this.updateUser;
-    }
-
-    public void setUpdateUser(Integer updateUser) {
-        this.updateUser = updateUser;
-    }
-
-    public Integer getProjectId() {
-        return this.projectId;
-    }
-
-    public void setProjectId(Integer projectId) {
-        this.projectId = projectId;
-    }
-
-    public Integer getState() {
-        return this.state;
-    }
-
-    public void setState(Integer state) {
-        this.state = state;
-    }
 }
