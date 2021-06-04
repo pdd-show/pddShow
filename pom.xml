@@ -31,7 +31,7 @@
         <aspectj.version>1.6.11</aspectj.version>
         <common.version>1.9.4</common.version>
         <jsoup.version>1.10.2</jsoup.version>
-        <httpclient.version>4.5.8</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <redis.version>2.1.2.RELEASE</redis.version>
         <easypoi.version>4.1.0</easypoi.version>
     </properties>
