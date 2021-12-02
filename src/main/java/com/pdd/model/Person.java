@@ -18,4 +18,14 @@ public class Person {
         this.sex = sex;
         this.area = area;
     }
+
+    public Person(String name, int salary, String sex, String area) {
+        this.name = name;
+        this.salary = salary;
+        this.sex = sex;
+        this.area = area;
+    }
+
+    public Person() {
+    }
 }

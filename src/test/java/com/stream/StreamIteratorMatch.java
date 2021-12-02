@@ -33,6 +33,7 @@ public class StreamIteratorMatch {
          * 是否包含符合特定条件的元素
          */
         boolean anyMatch = list.stream().anyMatch(x -> x > 6);
+
         System.out.println("匹配第一个值：" + findFirst.get());
         System.out.println("匹配任意一个值：" + findAny.get());
         System.out.println("是否存在大于6的值：" + anyMatch);

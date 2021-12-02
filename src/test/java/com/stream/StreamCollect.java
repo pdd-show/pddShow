@@ -69,4 +69,16 @@ public class StreamCollect {
 
     }
 
+    /**
+     * 分区：将stream按条件分为两个Map，比如员工按薪资是否高于8000分为两部分。
+     * 分组：将集合分为多个Map，比如员工按性别分组。有单级分组和多级分组。
+     */
+    @Test
+    public void group(){
+
+
+
+
+    }
+
 }
